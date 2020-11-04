@@ -27,6 +27,7 @@ public class Lab3 {
         Date date = new Date(file.lastModified());
         System.out.println("Последняя модификация: " + date);
         System.out.println("Hi");
+        System.out.println("Hello2");
 
 
 
