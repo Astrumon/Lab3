@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6760f544-41a1-4a92-bc6d-8bdb8cf9bdeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1jlwCzQUaiY7lGnKSOXvn4Frbdr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,14 +73,34 @@
       <option name="presentableId" value="Default" />
       <updated>1604391862956</updated>
       <workItem from="1604391866650" duration="4698000" />
-      <workItem from="1604495891914" duration="252000" />
+      <workItem from="1604495891914" duration="496000" />
     </task>
+    <task id="LOCAL-00001" summary="v3">
+      <created>1604496301790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604496301790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="543" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604496378034">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="543" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496378034" />
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1604496301263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496301263" />
     <state width="1537" height="216" key="GridCell.Tab.0.bottom" timestamp="1604398077458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -100,6 +121,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604495915203" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604496358224">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496358224" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604495962060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
