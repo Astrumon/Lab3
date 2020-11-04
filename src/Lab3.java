@@ -28,6 +28,7 @@ public class Lab3 {
         System.out.println("Последняя модификация: " + date);
         System.out.println("Hi");
         System.out.println("Hello2");
+        System.out.println();
 
 
 
