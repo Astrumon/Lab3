@@ -1,3 +1,5 @@
+package com.ua.seawar;
+
 public class Field {
 
     private static final int SIZE_ARRAY = 12;
