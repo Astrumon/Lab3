@@ -18,6 +18,14 @@ public class Field {
         }
     }
 
+    public void showField(String[][] arrayField) {
+        for (int i = 0; i < SIZE_ARRAY; i++) {
+            for (int j = 0; j < arrayField[i].length; j++) {
+                System.out.print(arrayField[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
 
 
     public void hideBattleField() {
@@ -40,6 +48,14 @@ public class Field {
                 }
             }
         }
+    }
+
+    public String[][] getArrayField() {
+        return arrayField;
+    }
+
+    public void setArrayField(String[][] arrayField) {
+        this.arrayField = arrayField;
     }
 
 }
