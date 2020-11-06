@@ -17,7 +17,12 @@ public class TestAllShips {
         player.setThreeDeck(7, 'F', 'v');
         player.setThreeDeck(1, 'F', 'v');
 
-        player.setFourDeck(10, 'G', 'h');
+        player.setFourDeck(8, 'B', 'h');
+
+
+        Field field = player.getField();
+        System.out.println("ready array: ");
+        field.showField();
         //player.setSingleDeck(7, 'J');
     }
 }

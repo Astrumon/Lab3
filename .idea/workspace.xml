@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6760f544-41a1-4a92-bc6d-8bdb8cf9bdeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestBattle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/ConfigFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/ScorePlayerOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/ScorePlayerTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" afterDir="false" />
@@ -9,11 +14,12 @@
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestAllShips.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestAllShips.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Score.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestAllShips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestAllShips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestOfDoubleDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestOfDoubleDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestOfThreeDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestOfThreeDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Score.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,9 +53,29 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Лабораторная работа №1. Биднык Данил ПГ-п81/Lab1" />
   </component>
-  <component name="RunManager" selected="Application.TestAllShips">
+  <component name="RunManager" selected="Application.TestBattle">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Lab3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAllShips" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tests.TestAllShips" />
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBattle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests.TestBattle" />
       <module name="Lab3" />
       <extension name="coverage">
         <pattern>
@@ -86,39 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOfSingleDeck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.TestOfSingleDeck" />
-      <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestOfThreeDeck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.TestOfThreeDeck" />
-      <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBattle" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.TestAllShips" />
         <item itemvalue="Application.TestOfFourDeck" />
         <item itemvalue="Application.TestOfDoubleDeck" />
-        <item itemvalue="Application.TestOfThreeDeck" />
-        <item itemvalue="Application.TestOfSingleDeck" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +148,11 @@
       <workItem from="1604391866650" duration="4698000" />
       <workItem from="1604495891914" duration="678000" />
       <workItem from="1604564903280" duration="13852000" />
-      <workItem from="1604597980012" duration="22860000" />
+      <workItem from="1604597980012" duration="23258000" />
+      <workItem from="1604630246044" duration="110000" />
+      <workItem from="1604669221690" duration="1825000" />
+      <workItem from="1604684978187" duration="684000" />
+      <workItem from="1604689823614" duration="5773000" />
     </task>
     <task id="LOCAL-00001" summary="v3">
       <created>1604496301790</created>
@@ -186,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="543" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496378034" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1604601223663">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1604693670041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604601223663" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604693670041" />
     <state x="575" y="242" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1604605564534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -202,60 +207,68 @@
       <screen x="1920" y="25" width="1280" height="920" />
     </state>
     <state x="2341" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604566341166" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1604622564320">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1604695554631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604622564320" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1604622564319">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604695554631" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1604695554631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604622564319" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1604622564319">
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604695554631" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1604695554631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604622564319" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1604622564319">
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604695554631" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1604695554631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604622564319" />
-    <state width="1493" height="259" key="GridCell.Tab.1.bottom" timestamp="1604603421816">
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604695554631" />
+    <state width="1493" height="259" key="GridCell.Tab.1.bottom" timestamp="1604695013298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="298" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668246" />
-    <state width="1493" height="259" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604603421816" />
-    <state width="1493" height="259" key="GridCell.Tab.1.center" timestamp="1604603421815">
+    <state width="1493" height="259" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604695013298" />
+    <state width="1493" height="259" key="GridCell.Tab.1.center" timestamp="1604695013297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="298" key="GridCell.Tab.1.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668246" />
-    <state width="1493" height="259" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604603421815" />
-    <state width="1493" height="259" key="GridCell.Tab.1.left" timestamp="1604603421815">
+    <state width="1493" height="259" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604695013297" />
+    <state width="1493" height="259" key="GridCell.Tab.1.left" timestamp="1604695013297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="298" key="GridCell.Tab.1.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668246" />
-    <state width="1493" height="259" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604603421815" />
-    <state width="1493" height="259" key="GridCell.Tab.1.right" timestamp="1604603421816">
+    <state width="1493" height="259" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604695013297" />
+    <state width="1493" height="259" key="GridCell.Tab.1.right" timestamp="1604695013298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="298" key="GridCell.Tab.1.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668246" />
-    <state width="1493" height="259" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604603421816" />
-    <state x="466" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1604597981213">
+    <state width="1493" height="259" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604695013298" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604695497210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1604695497210" />
+    <state x="466" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1604689875355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604495915203" />
     <state x="2308" y="288" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604564902559" />
-    <state x="466" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604597981213" />
+    <state x="466" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604689875355" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604496463356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496463356" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604670127848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604670127848" />
     <state x="2279" y="187" width="672" height="757" key="search.everywhere.popup" timestamp="1604580319733">
       <screen x="1920" y="25" width="1280" height="920" />
     </state>

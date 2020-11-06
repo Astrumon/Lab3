@@ -1,4 +1,5 @@
 package com.ua.seawar;
 
-public class Score {
+public abstract class Score {
+    abstract void setScore(int score);
 }
