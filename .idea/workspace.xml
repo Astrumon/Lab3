@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6760f544-41a1-4a92-bc6d-8bdb8cf9bdeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tests/TestAllShips.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" afterDir="false" />
@@ -10,11 +9,10 @@
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfDoubleDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfDoubleDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfFourDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfFourDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestAllShips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestAllShips.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestOfDoubleDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestOfDoubleDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestOfFourDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestOfFourDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestOfThreeDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestOfThreeDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +147,7 @@
       <workItem from="1604391866650" duration="4698000" />
       <workItem from="1604495891914" duration="678000" />
       <workItem from="1604564903280" duration="13852000" />
-      <workItem from="1604597980012" duration="21489000" />
+      <workItem from="1604597980012" duration="22860000" />
     </task>
     <task id="LOCAL-00001" summary="v3">
       <created>1604496301790</created>
@@ -204,30 +202,30 @@
       <screen x="1920" y="25" width="1280" height="920" />
     </state>
     <state x="2341" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604566341166" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1604620990039">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1604622564320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604620990039" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1604620990039">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604622564320" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1604622564319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604620990039" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1604620990039">
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604622564319" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1604622564319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604620990039" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1604620990039">
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604622564319" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1604622564319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604620990039" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604622564319" />
     <state width="1493" height="259" key="GridCell.Tab.1.bottom" timestamp="1604603421816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

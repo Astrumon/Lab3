@@ -12,6 +12,12 @@ public class Player {
     private int vOrient = 0, gOrient = 0;
     private int[] checkArray;
 
+    private final String OUT_OF_FRAME = "выход за границы";
+    private final String PLACE_TAKEN = "место занято";
+    private final String MAX_LIMIT = "достигнут лимит по количеству кораблей";
+    private final  char ORIENTATION_VERTICAL = 'v';
+    private final  char ORIENTATION_HORIZONTAL = 'h';
+
     public Player() {
         field = new Field();
         arrayField = field.getArrayField();
@@ -35,16 +41,16 @@ public class Player {
                 if (isEmpty(x, iLet)) {
                     arrayField[x][iLet] = singleDecks.get(countSingleDeck - 1).create()[0];
                 } else {
-                    System.out.println("место занято");
+                    System.out.println(PLACE_TAKEN);
                 }
                 countSingleDeck--;
                 field.setArrayField(arrayField);
                 field.showField();
             } catch (IndexOutOfBoundsException exc) {
-                System.err.println("max limit of this type ship");
+                System.err.println(MAX_LIMIT);
             }
         } else {
-            System.out.println("выход за границы");
+            System.out.println(OUT_OF_FRAME);
         }
     }
 
@@ -56,7 +62,7 @@ public class Player {
         if (isBorder(x + buffs[0], iLet + buffs[1])) {
             countDoubleDeck = locationShip(doubleDecks, countDoubleDeck, x);
         } else {
-            System.out.println("выход за границы");
+            System.out.println(OUT_OF_FRAME);
         }
     }
 
@@ -68,7 +74,7 @@ public class Player {
         if (isBorder(x + buffs[0], iLet + buffs[1])) {
             countThreeDeck = locationShip(threeDecks, countThreeDeck, x);
         } else {
-            System.out.println("выход за границы");
+            System.out.println(OUT_OF_FRAME);
         }
     }
 
@@ -80,7 +86,7 @@ public class Player {
         if (isBorder(x + buffs[0], iLet + buffs[1])) {
             countFourDeck = locationShip(fourDecks, countFourDeck, x);
         } else {
-            System.out.println("выход за границы");
+            System.out.println(OUT_OF_FRAME);
         }
     }
 
@@ -137,7 +143,7 @@ public class Player {
 
     private int getVOrientation(char orientation) {
         int or = 0;
-        if (orientation == 'v') {
+        if (orientation == ORIENTATION_VERTICAL) {
             or = 1;
         }
         return or;
@@ -145,7 +151,7 @@ public class Player {
 
     private int getGOrientation(char orientation) {
         int or = 0;
-        if (orientation == 'g') {
+        if (orientation == ORIENTATION_HORIZONTAL) {
             or = 1;
         }
         return or;
@@ -164,10 +170,10 @@ public class Player {
                     iLet += gOrient;
                 } else {
                     if (i == count-1) {
-                        arrayField[x-vOrient][iLet-gOrient] = "*";
-                        arrayField[firstx][firstIlet] = "*";
+                        arrayField[x-vOrient][iLet-gOrient] = Field.VALUE_DEFAULT;
+                        arrayField[firstx][firstIlet] = Field.VALUE_DEFAULT;
                     }
-                    System.out.println("место занято");
+                    System.out.println(PLACE_TAKEN);
                     break;
                 }
             }
@@ -176,7 +182,7 @@ public class Player {
             field.setArrayField(arrayField);
             field.showField();
         } catch (IndexOutOfBoundsException exc) {
-            System.out.println("max limit for this type ship ");
+            System.out.println(MAX_LIMIT);
         }
         return countNDeck;
     }
@@ -186,10 +192,10 @@ public class Player {
     }
 
     private int[] bufferBorder(int buffV, int buffG, char orientation, int limit) {
-        if (orientation == 'v') {
+        if (orientation == ORIENTATION_VERTICAL) {
             buffV += limit;
             buffG = 0;
-        } else if (orientation == 'g') {
+        } else if (orientation == ORIENTATION_HORIZONTAL) {
             buffG += limit;
             buffV = 0;
         }
@@ -197,7 +203,7 @@ public class Player {
     }
 
     private boolean isEmpty(int x, int y) {
-        return arrayField[x][y].equals("*");
+        return arrayField[x][y].equals(Field.VALUE_DEFAULT);
     }
 
 

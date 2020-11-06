@@ -5,10 +5,10 @@ public class Field {
     private static final int SIZE_ARRAY = 12;
     private String[][] arrayField = new String[SIZE_ARRAY][SIZE_ARRAY];
     private static final String VALUE_HIDE = "#";
+    protected static final String VALUE_DEFAULT = ".";
 
     public Field() {
-        String defaultValue = "*";
-        initializeField(defaultValue);
+        initializeField(VALUE_DEFAULT);
     }
 
     public void showField() {

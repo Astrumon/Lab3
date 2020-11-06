@@ -11,13 +11,13 @@ public class TestAllShips {
         player.setSingleDeck(1, 'I');
 
         player.setDoubleDeck(1, 'C', 'v');
-        player.setDoubleDeck(6, 'H', 'g');
-        player.setDoubleDeck(7, 'A', 'g');
+        player.setDoubleDeck(6, 'H', 'h');
+        player.setDoubleDeck(7, 'A', 'h');
 
         player.setThreeDeck(7, 'F', 'v');
         player.setThreeDeck(1, 'F', 'v');
 
-        player.setFourDeck(10, 'G', 'g');
+        player.setFourDeck(10, 'G', 'h');
         //player.setSingleDeck(7, 'J');
     }
 }
