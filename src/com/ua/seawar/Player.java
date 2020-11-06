@@ -29,15 +29,14 @@ public class Player {
 
     public void setSingleDeck(int x, char y) {
         int iLet = getI(y);
-          /*  for (int i = 0; i < arrayField.length; i++) {
-                for (int j = 0; j < arrayField[i].length; j++) {
-
-                }
-            } */
 
         if (isBorder(x, iLet)) {
             try {
-                arrayField[x][iLet] = singleDecks.get(countSingleDeck - 1).create()[0];
+                if (isEmpty(x, iLet)) {
+                    arrayField[x][iLet] = singleDecks.get(countSingleDeck - 1).create()[0];
+                } else {
+                    System.out.println("место занято");
+                }
                 countSingleDeck--;
                 field.setArrayField(arrayField);
                 field.showField();
@@ -54,7 +53,7 @@ public class Player {
         vOrient = getVOrientation(orientation);
         gOrient = getGOrientation(orientation);
         int[] buffs = bufferBorder(vOrient, gOrient, orientation, 0);
-        if (isBorder(x+buffs[0], iLet+buffs[1])) {
+        if (isBorder(x + buffs[0], iLet + buffs[1])) {
             countDoubleDeck = locationShip(doubleDecks, countDoubleDeck, x);
         } else {
             System.out.println("выход за границы");
@@ -66,26 +65,24 @@ public class Player {
         vOrient = getVOrientation(orientation);
         gOrient = getGOrientation(orientation);
         int[] buffs = bufferBorder(vOrient, gOrient, orientation, 1);
-        if (isBorder(x+buffs[0], iLet+buffs[1])) {
+        if (isBorder(x + buffs[0], iLet + buffs[1])) {
             countThreeDeck = locationShip(threeDecks, countThreeDeck, x);
         } else {
             System.out.println("выход за границы");
         }
     }
 
-
     public void setFourDeck(int x, char y, char orientation) {
         iLet = getI(y);
         vOrient = getVOrientation(orientation);
         gOrient = getGOrientation(orientation);
         int[] buffs = bufferBorder(vOrient, gOrient, orientation, 2);
-        if (isBorder(x+buffs[0], iLet+buffs[1])) {
+        if (isBorder(x + buffs[0], iLet + buffs[1])) {
             countFourDeck = locationShip(fourDecks, countFourDeck, x);
         } else {
             System.out.println("выход за границы");
         }
     }
-
 
     private void addShip(int countOfDeck, List<Ship> ships, Ship ship) {
         for (int i = 0; i < countOfDeck; i++) {
@@ -158,12 +155,24 @@ public class Player {
         try {
             int count = getCountDeck(ships.get(0));
             String[] partsOfShip = ships.get(countNDeck - 1).create();
+            int firstx = x;
+            int firstIlet = iLet;
             for (int i = 0; i < count; i++) {
-                arrayField[x][iLet] = partsOfShip[i];
-                x += vOrient;
-                iLet += gOrient;
+                if (isEmpty(x, iLet)) {
+                    arrayField[x][iLet] = partsOfShip[i];
+                    x += vOrient;
+                    iLet += gOrient;
+                } else {
+                    if (i == count-1) {
+                        arrayField[x-vOrient][iLet-gOrient] = "*";
+                        arrayField[firstx][firstIlet] = "*";
+                    }
+                    System.out.println("место занято");
+                    break;
+                }
             }
-             countNDeck--;
+
+            countNDeck--;
             field.setArrayField(arrayField);
             field.showField();
         } catch (IndexOutOfBoundsException exc) {
@@ -184,8 +193,13 @@ public class Player {
             buffG += limit;
             buffV = 0;
         }
-        System.out.println("v = " + buffV + " g = " + buffG);
         return new int[]{buffV, buffG};
     }
+
+    private boolean isEmpty(int x, int y) {
+        return arrayField[x][y].equals("*");
+    }
+
+
 
 }
