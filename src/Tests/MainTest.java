@@ -142,7 +142,17 @@ public class MainTest {
         System.out.println(player.getName() + " ваш ход. Введите координаты для" + text);
         number = random.nextInt(10);
         letter = getLetter(random.nextInt(10));
-        orientation = type.equals("single") ? ' ' : 'v';
+        int or = random.nextInt(2);
+       // orientation = type.equals("single");
+        if (type.equals("single")) {
+            orientation = ' ';
+        } else {
+            if (or == 0) {
+                orientation = 'h';
+            } else if (or == 1) {
+                orientation = 'v';
+            }
+        }
         // System.out.println("Вы подтверждаете свой выбор? (\'y\' - yes, \'n\' - no)");
         // String result = new Scanner(System.in).nextLine();
 
