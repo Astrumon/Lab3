@@ -2,9 +2,7 @@ package com.ua.seawar;
 
 import com.ua.seawar.count_decks.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Scanner;
 
 public class Lab3 {
@@ -24,7 +22,7 @@ public class Lab3 {
     static FourdeckCounter fourdeckCounter = new FourdeckCounter();
 
     static boolean flagSingle, flagDouble, flagThree, flagFour;
-
+    private static SaveFile saveFile;
     private static final String TEXT_INFO_SINGLE = " для однопалубного корабля в виде числа и символа (1 А)";
     private static final String TEXT_INFO_DOUBLE = " для двухпалубного корабля в виде числа и символа и расположения h/v (1 А h)";
     private static final String TEXT_INFO_THREE = " для трёхпалубного корабля в виде числа и символа и расположения h/v (1 А h)";
@@ -42,7 +40,6 @@ public class Lab3 {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         reset();
         setShipPlayerTwo();
-
 
         do {
             if (battle.getScorePlayerOne() == 20 || battle.getScorePlayerTwo() == 20) {
@@ -65,9 +62,28 @@ public class Lab3 {
             battle.getField1().showField();
         }
 
-        System.out.println("Общий результат:");
-        //TODO запихнуть боевые поля в файл в строку и взять с файла и отобразить в консоле
 
+        System.out.println("Общий результат:");
+        showResult(battle.getField1().getArrayField(), battle.getField2().getArrayField());
+        Scanner keyInput = new Scanner(System.in);
+        Scanner keyInput1 = new Scanner(System.in);
+        System.out.println("Сохранить данные результаты?(y/n)");
+        String save = keyInput.nextLine();
+        if (save.equals("y")) {
+            System.out.println("Желаете ввести указанный путь? (y/n)");
+            String keyPath = keyInput1.nextLine();
+            if (keyPath.equals("y")) {
+                System.out.println("Введите свой путь: ");
+                saveFile = new SaveFile(keyInput1.nextLine(), battle.getField1().getArrayField(), battle.getField2().getArrayField());
+            } else {
+                saveFile = new SaveFile(battle.getField1().getArrayField(), battle.getField2().getArrayField());
+            }
+            if (saveFile.saveData()) {
+                System.out.println("Результаты сохранены на: " + saveFile.getPathname());
+            }
+        } else if (save.equals("n")) {
+            System.out.println("Выход из игры");
+        }
     }
 
     public static void setShipPlayerOne() {
@@ -156,6 +172,25 @@ public class Lab3 {
         flagDouble = false;
         flagThree = false;
         flagFour = false;
+    }
+
+    public static void showResult(String[][] array1, String[][] array2) {
+        for (int i = 0; i < array1.length; i++) {
+            for (int j = 0; j < array1[0].length; j++) {
+                if (i == 0 && j == 0) {
+                    System.out.print("@1");
+                }
+                System.out.print(array1[i][j] + "\t");
+            }
+            for (int j = 0; j < array2[0].length; j++) {
+                if (i == 0 && j == 0) {
+                    System.out.print("@2");
+                }
+                System.out.print(array2[i][j] + "\t");
+
+            }
+            System.out.println();
+        }
     }
 
 }

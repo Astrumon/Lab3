@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6760f544-41a1-4a92-bc6d-8bdb8cf9bdeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tests/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/count_decks/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/count_decks/DoubledeckCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/count_decks/FourdeckCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/count_decks/SingledeckCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/count_decks/ThreedeckCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ua/seawar/SaveFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" afterDir="false" />
@@ -15,38 +10,10 @@
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestAllShips.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestAllShips.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestBattle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestEmptySpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestEmptySpace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfDoubleDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfDoubleDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfFourDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfFourDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfSingleDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfSingleDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfThreeDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestOfThreeDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestScore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Battle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/DoubleDeck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/FourDeck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/MainTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Lab3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Lab3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/ScorePlayerOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/ScorePlayerTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Ship.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/SingleDeck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/ThreeDeck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/DoubleDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/ships/DoubleDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/FourDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/ships/FourDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Lab3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Lab3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/score_players/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/ScorePlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/score_players/ScorePlayerOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/ScorePlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/score_players/ScorePlayerTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/ships/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/SingleDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/ships/SingleDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/ThreeDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/ships/ThreeDeck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +161,7 @@
       <workItem from="1604749534255" duration="7306000" />
       <workItem from="1604763586115" duration="5142000" />
       <workItem from="1604818621441" duration="12215000" />
-      <workItem from="1604835466280" duration="8268000" />
+      <workItem from="1604835466280" duration="14220000" />
     </task>
     <task id="LOCAL-00001" summary="v3">
       <created>1604496301790</created>
@@ -233,10 +200,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="543" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496378034" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1604840772373">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1604850608324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604840772373" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604850608324" />
     <state x="575" y="242" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1604752168502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -250,30 +217,30 @@
     </state>
     <state x="2341" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604566341166" />
     <state x="505" y="193" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604754479702" />
-    <state width="1493" height="347" key="GridCell.Tab.0.bottom" timestamp="1604843794218">
+    <state width="1493" height="347" key="GridCell.Tab.0.bottom" timestamp="1604851944522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604843794218" />
-    <state width="1493" height="347" key="GridCell.Tab.0.center" timestamp="1604843794218">
+    <state width="1493" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604851944522" />
+    <state width="1493" height="347" key="GridCell.Tab.0.center" timestamp="1604851944522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604843794218" />
-    <state width="1493" height="347" key="GridCell.Tab.0.left" timestamp="1604843794217">
+    <state width="1493" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604851944522" />
+    <state width="1493" height="347" key="GridCell.Tab.0.left" timestamp="1604851944521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604843794217" />
-    <state width="1493" height="347" key="GridCell.Tab.0.right" timestamp="1604843794218">
+    <state width="1493" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604851944521" />
+    <state width="1493" height="347" key="GridCell.Tab.0.right" timestamp="1604851944522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604843794218" />
+    <state width="1493" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604851944522" />
     <state width="1493" height="259" key="GridCell.Tab.1.bottom" timestamp="1604830847218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -312,11 +279,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604839327509" />
-    <state x="431" y="145" width="807" height="679" key="search.everywhere.popup" timestamp="1604825916996">
+    <state x="431" y="145" width="807" height="679" key="search.everywhere.popup" timestamp="1604849416665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604495962060" />
     <state x="2279" y="187" width="672" height="757" key="search.everywhere.popup/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604580319733" />
-    <state x="431" y="145" width="807" height="679" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604825916996" />
+    <state x="431" y="145" width="807" height="679" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604849416665" />
   </component>
 </project>
