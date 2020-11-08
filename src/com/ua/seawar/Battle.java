@@ -1,5 +1,8 @@
 package com.ua.seawar;
-import com.ua.seawar.Player;
+import com.ua.seawar.score_players.Score;
+import com.ua.seawar.score_players.ScorePlayerOne;
+import com.ua.seawar.score_players.ScorePlayerTwo;
+
 public class Battle implements ConfigFrame{
 
     private Player player1, player2;

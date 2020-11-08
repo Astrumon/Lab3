@@ -1,13 +1,16 @@
-package com.ua.seawar;
+package Tests;
 
+import com.ua.seawar.Battle;
+import com.ua.seawar.Field;
+import com.ua.seawar.Player;
 import com.ua.seawar.count_decks.*;
 
-import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Random;
 import java.util.Scanner;
 
-public class Lab3 {
+public class MainTest {
     static Player player1 = new Player("PlayerOne");
     static Player player2 = new Player("PlayerTwo");
 
@@ -16,7 +19,8 @@ public class Lab3 {
     static int number = 0;
     static char letter = 0, orientation;
 
-    static Scanner keyInput = new Scanner(System.in);
+   // static Scanner keyInput = new Scanner(System.in);
+   static Random random = new Random();
 
     static SingledeckCounter singledeckCounter = new SingledeckCounter();
     static DoubledeckCounter doubledeckCounter = new DoubledeckCounter();
@@ -43,16 +47,19 @@ public class Lab3 {
         reset();
         setShipPlayerTwo();
 
-
+        Field field = new Field();
+        field.hideBattleField();
         do {
             if (battle.getScorePlayerOne() == 20 || battle.getScorePlayerTwo() == 20) {
                 break;
             }
             System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
-            battle.shootPlayerOne(keyInput.nextInt(), keyInput.next().charAt(0));
+            field.showField();
+            battle.shootPlayerOne(random.nextInt(10), getLetter(random.nextInt(10)));
             System.out.println("score1 = " + battle.getScorePlayerOne());
             System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
-            battle.shootPlayerTwo(keyInput.nextInt(), keyInput.next().charAt(0));
+            field.showField();
+            battle.shootPlayerTwo(random.nextInt(10), getLetter(random.nextInt(10)));
             System.out.println("score2 = " + battle.getScorePlayerTwo());
         } while ((battle.getScorePlayerOne() != 20) || (battle.getScorePlayerTwo() != 20));
 
@@ -116,13 +123,12 @@ public class Lab3 {
 
     public static String set(String text, String type, Player player, Counter counter) {
         System.out.println(player.getName() + " ваш ход. Введите координаты для" + text);
-        number = keyInput.nextInt();
-        letter = keyInput.next().charAt(0);
-        orientation = type.equals("single") ? ' ' : keyInput.next().charAt(0);
-        System.out.println("Вы подтверждаете свой выбор? (\'y\' - yes, \'n\' - no)");
-        String result = new Scanner(System.in).nextLine();
+        number = random.nextInt(10);
+        letter = getLetter(random.nextInt(10));
+        orientation = type.equals("single") ? ' ' : 'v';
+       // System.out.println("Вы подтверждаете свой выбор? (\'y\' - yes, \'n\' - no)");
+       // String result = new Scanner(System.in).nextLine();
 
-        if (result.equals("y")) {
             switch (type) {
                 case "single" : flagSingle = player.setSingleDeck(number, letter); if (flagSingle) counter.add();
                 break;
@@ -134,15 +140,6 @@ public class Lab3 {
                 break;
             }
 
-        } else if (result.equals("n")) {
-            System.out.println("Желаете выйти? (\'y\', \'n\')");
-            String exit = new Scanner(System.in).nextLine();
-            if (exit.equals("y")) {
-                return "q";
-            } else if (exit.equals("n")) {
-            }
-        } else {
-        }
         return "";
     }
 
@@ -156,6 +153,35 @@ public class Lab3 {
         flagDouble = false;
         flagThree = false;
         flagFour = false;
+    }
+
+    public static char getLetter(int number) {
+        char ch = 'O';
+        switch (number) {
+            case 0 : ch = 'O';
+                break;
+            case 1 : ch ='A';
+                break;
+            case 2 : ch ='B';
+                break;
+            case 3 : ch ='C';
+                break;
+            case 4 : ch ='D';
+                break;
+            case 5 : ch ='E';
+                break;
+            case 6 : ch ='F';
+                break;
+            case 7 : ch ='G';
+                break;
+            case 8 : ch ='H';
+                break;
+            case 9 : ch ='I';
+                break;
+            case 10 : ch ='J';
+                break;
+        }
+        return ch;
     }
 
 }

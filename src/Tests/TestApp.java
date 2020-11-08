@@ -89,9 +89,10 @@ public class TestApp {
             System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
             battle.shootPlayerOne(num, sym);
             System.out.println("number: " + num + "letter " + sym);
-            System.out.println(battle.getScorePlayerOne());
+            System.out.println("score1 = " + battle.getScorePlayerOne());
             System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
             battle.shootPlayerTwo(num, sym);
+            System.out.println("score2 = " + battle.getScorePlayerTwo());
 
         } while ((battle.getScorePlayerOne() != 20) || (battle.getScorePlayerTwo() != 20));
 

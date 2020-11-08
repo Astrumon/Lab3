@@ -1,4 +1,6 @@
-package com.ua.seawar;
+package com.ua.seawar.ships;
+
+import com.ua.seawar.ships.Ship;
 
 import java.util.Arrays;
 

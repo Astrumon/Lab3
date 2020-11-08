@@ -1,7 +1,9 @@
-package com.ua.seawar;
+package com.ua.seawar.score_players;
+
+import com.ua.seawar.score_players.Score;
 
 public class ScorePlayerTwo extends Score {
-    private static int score;
+    private static int score = 0;
 
     public void addPoint() {
         score++;
