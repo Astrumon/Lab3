@@ -23,10 +23,10 @@ public class Lab3 {
 
     static boolean flagSingle, flagDouble, flagThree, flagFour;
     private static SaveFile saveFile;
-    private static final String TEXT_INFO_SINGLE = " для однопалубного корабля в виде числа и символа (1 А)";
-    private static final String TEXT_INFO_DOUBLE = " для двухпалубного корабля в виде числа и символа и расположения h/v (1 А h)";
-    private static final String TEXT_INFO_THREE = " для трёхпалубного корабля в виде числа и символа и расположения h/v (1 А h)";
-    private static final String TEXT_INFO_FOUR = " для четырёхпалубного корабля в виде числа и символа и расположения h/v (1 А h)";
+    private static final String TEXT_INFO_SINGLE = " для однопалубного корабля в виде числа 1..10 и символа A..J (1 А)";
+    private static final String TEXT_INFO_DOUBLE = " для двухпалубного корабля в виде числа 1..10 и символа A..J, и расположения h/v (1 А h)";
+    private static final String TEXT_INFO_THREE = " для трёхпалубного корабля в виде числа 1..10 и символа A..J, и расположения h/v (1 А h)";
+    private static final String TEXT_INFO_FOUR = " для четырёхпалубного корабля в виде числа 1..10 и символа A..J, и расположения h/v (1 А h)";
 
     private static boolean exitStatus = false;
 
