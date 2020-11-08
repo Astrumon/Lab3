@@ -1,10 +1,10 @@
 package com.ua.seawar;
 
 public class ScorePlayerOne extends Score {
-    private int score;
+    private static int score;
 
-    public void setScore(int score) {
-        this.score = score;
+    public void addPoint() {
+        score++;
     }
     public int getScore() {
         return score;

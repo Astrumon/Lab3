@@ -5,7 +5,7 @@ public class TestOfSingleDeck {
     public static void main(String[] args) {
         Player player = new Player();
       //  player.showCount();
-        player.setSingleDeck(11, 'A');
+        player.setSingleDeck(1, 'A');
        /* player.showCount();
         player.setSingleDeck(1, 'B');
         player.showCount();

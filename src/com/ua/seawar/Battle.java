@@ -1,6 +1,7 @@
 package com.ua.seawar;
 import com.ua.seawar.Player;
 public class Battle implements ConfigFrame{
+
     private Player player1, player2;
     private Field field1, field2;
     private String[][] arrayField1, arrayField2;
@@ -8,9 +9,6 @@ public class Battle implements ConfigFrame{
     private final String HIT_VALUE = "*";
     private ScorePlayerOne scorePlayerOne;
     private ScorePlayerTwo scorePlayerTwo;
-    private int i = 0;
-    private int scorePlayer1 = 0;
-    private int scorePlayer2 = 0;
 
 
     public Battle(Player player1, Player player2) {
@@ -27,20 +25,20 @@ public class Battle implements ConfigFrame{
         arrayField2 = field2.getArrayField();
     }
 
-    public void shootPlayerOne(int x, char y) {
-        int iLet = getI(y);
-        if (isBorder(x, iLet)) {
-            arrayField2[x][iLet] = shipChecker(arrayField2[x][iLet], scorePlayerOne);
+    public void shootPlayerOne(int number, char letter) {
+        int iLetter = getI(letter);
+        if (isBorder(number, iLetter)) {
+            arrayField2[number][iLetter] = shipChecker(arrayField2[number][iLetter], scorePlayerOne);
         } else {
             System.out.println(Player.OUT_OF_FRAME);
         }
     }
 
-    public void shootPlayerTwo(int x, char y) {
-        int iLet = getI(y);
+    public void shootPlayerTwo(int number, char letter) {
+        int iLetter = getI(letter);
 
-        if (isBorder(x, iLet)) {
-            arrayField1[x][iLet] = shipChecker(arrayField1[x][iLet], scorePlayerTwo);
+        if (isBorder(number, iLetter)) {
+            arrayField1[number][iLetter] = shipChecker(arrayField1[number][iLetter], scorePlayerTwo);
         } else {
             System.out.println(Player.OUT_OF_FRAME);
         }
@@ -50,23 +48,20 @@ public class Battle implements ConfigFrame{
 
         if (cordShip.equals(Field.VALUE_DEFAULT)) {
             cordShip = MISS_VALUE;
-        } else {
+        } else if (cordShip.equals(HIT_VALUE) ) {
             cordShip = HIT_VALUE;
-           score.setScore(i++);
+        } else if (cordShip.equals(MISS_VALUE)) {
+            cordShip = MISS_VALUE;
+        }
+        else if (cordShip.equals("s") || cordShip.equals("d") || cordShip.equals("t") || cordShip.equals("f")){
+            cordShip = HIT_VALUE;
+           score.addPoint();
         }
         return cordShip;
     }
 
     public Field getField1() {
         return field1;
-    }
-
-    public int getScorePlayer1() {
-        return scorePlayer1;
-    }
-
-    public int getScorePlayer2() {
-        return scorePlayer2;
     }
 
     public int getScorePlayerOne() {
@@ -77,6 +72,7 @@ public class Battle implements ConfigFrame{
         return scorePlayerTwo.getScore();
     }
 
-
-
+    public Field getField2() {
+        return field2;
+    }
 }

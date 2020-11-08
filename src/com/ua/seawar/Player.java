@@ -8,7 +8,7 @@ public class Player implements ConfigFrame {
     private String[][] arrayField;
     private List<Ship> singleDecks, doubleDecks, threeDecks, fourDecks;
     private int countSingleDeck = 4, countDoubleDeck = 3, countThreeDeck = 2, countFourDeck = 1;
-    private int iLet = 0;
+    private int letter = 0;
     private int vOrient = 0, gOrient = 0;
 
     protected final static String OUT_OF_FRAME = "выход за границы";
@@ -32,13 +32,13 @@ public class Player implements ConfigFrame {
         addShip(countFourDeck, fourDecks, new FourDeck());
     }
 
-    public void setSingleDeck(int x, char y) {
-        int iLet = getI(y);
+    public void setSingleDeck(int number, char letter) {
+        int iLetter = getI(letter);
 
-        if (isBorder(x, iLet)) {
+        if (isBorder(number, iLetter)) {
             try {
-                if (isEmpty(x, iLet)) {
-                    arrayField[x][iLet] = singleDecks.get(countSingleDeck - 1).create()[0];
+                if (isEmpty(number, iLetter)) {
+                    arrayField[number][iLetter] = singleDecks.get(countSingleDeck - 1).create()[0];
                 } else {
                     System.out.println(PLACE_TAKEN);
                 }
@@ -54,46 +54,46 @@ public class Player implements ConfigFrame {
         }
     }
 
-    public void setDoubleDeck(int x, char y, char orientation) {
-        iLet = getI(y);
+    public void setDoubleDeck(int number, char letter, char orientation) {
+        this.letter = getI(letter);
 
         vOrient = getVOrientation(orientation);
         gOrient = getGOrientation(orientation);
 
         int[] buffs = range(vOrient, gOrient, orientation, 0);
 
-        if (isBorder(x + buffs[0], iLet + buffs[1])) {
-            countDoubleDeck = locationShip(doubleDecks, countDoubleDeck, x);
+        if (isBorder(number + buffs[0], this.letter + buffs[1])) {
+            countDoubleDeck = locationShip(doubleDecks, countDoubleDeck, number);
         } else {
             System.out.println(OUT_OF_FRAME);
         }
     }
 
-    public void setThreeDeck(int x, char y, char orientation) {
-        iLet = getI(y);
+    public void setThreeDeck(int number, char letter, char orientation) {
+        this.letter = getI(letter);
 
         vOrient = getVOrientation(orientation);
         gOrient = getGOrientation(orientation);
 
         int[] buffs = range(vOrient, gOrient, orientation, 1);
 
-        if (isBorder(x + buffs[0], iLet + buffs[1])) {
-            countThreeDeck = locationShip(threeDecks, countThreeDeck, x);
+        if (isBorder(number + buffs[0], this.letter + buffs[1])) {
+            countThreeDeck = locationShip(threeDecks, countThreeDeck, number);
         } else {
             System.out.println(OUT_OF_FRAME);
         }
     }
 
-    public void setFourDeck(int x, char y, char orientation) {
-        iLet = getI(y);
+    public void setFourDeck(int number, char letter, char orientation) {
+        this.letter = getI(letter);
 
         vOrient = getVOrientation(orientation);
         gOrient = getGOrientation(orientation);
 
         int[] buffs = range(vOrient, gOrient, orientation, 2);
 
-        if (isBorder(x + buffs[0], iLet + buffs[1])) {
-            countFourDeck = locationShip(fourDecks, countFourDeck, x);
+        if (isBorder(number + buffs[0], this.letter + buffs[1])) {
+            countFourDeck = locationShip(fourDecks, countFourDeck, number);
         } else {
             System.out.println(OUT_OF_FRAME);
         }
@@ -125,24 +125,31 @@ public class Player implements ConfigFrame {
         return or;
     }
 
-    private int locationShip(List<Ship> ships, int countNDeck, int x) {
+    private int locationShip(List<Ship> ships, int countNDeck, int number) {
         try {
             int count = getCountDeck(ships.get(0));
             String[] partsOfShip = ships.get(countNDeck - 1).create();
 
-            int firstx = x;
-            int firstIlet = iLet;
+            int firstNumber = number;
+            int firstLetter = letter;
+            boolean flag = true;
+            for (int j = 0; j < partsOfShip.length; j++ ) {
+                if (!isEmpty(number, letter)) {
+                    flag = false;
+                    break;
+                }
+                number += vOrient;
+                letter += gOrient;
+            }
+
+            number = firstNumber;
+            letter = firstLetter;
             for (int i = 0; i < count; i++) {
-                //TODO изменить алгоритм для горизонтального положения(работает некорректно)
-                if (isEmpty(x, iLet)) {
-                    arrayField[x][iLet] = partsOfShip[i];
-                    x += vOrient;
-                    iLet += gOrient;
+                if (flag) {
+                    arrayField[number][letter] = partsOfShip[i];
+                    number += vOrient;
+                    letter += gOrient;
                 } else {
-                    if (i == count-1) {
-                        arrayField[x-vOrient][iLet-gOrient] = Field.VALUE_DEFAULT;
-                        arrayField[firstx][firstIlet] = Field.VALUE_DEFAULT;
-                    }
                     System.out.println(PLACE_TAKEN);
                     break;
                 }
@@ -170,8 +177,8 @@ public class Player implements ConfigFrame {
         return new int[]{buffV, buffG};
     }
 
-    private boolean isEmpty(int x, int y) {
-        return arrayField[x][y].equals(Field.VALUE_DEFAULT);
+    private boolean isEmpty(int number, int letter) {
+        return arrayField[number][letter].equals(Field.VALUE_DEFAULT);
     }
 
     public Field getField() {
