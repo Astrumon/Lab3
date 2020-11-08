@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6760f544-41a1-4a92-bc6d-8bdb8cf9bdeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestShoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" afterDir="false" />
@@ -9,6 +10,17 @@
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestBattle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Lab3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Lab3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Lab3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Lab3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,19 +73,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainCar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.MainCar" />
-      <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tests.MainTest" />
       <module name="Lab3" />
@@ -113,12 +112,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestShoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests.TestShoot" />
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Lab3" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.TestApp" />
-        <item itemvalue="Application.MainCar" />
+        <item itemvalue="Application.TestShoot" />
         <item itemvalue="Application.TestScore" />
       </list>
     </recent_temporary>
@@ -156,7 +168,7 @@
       <workItem from="1604749534255" duration="7306000" />
       <workItem from="1604763586115" duration="5142000" />
       <workItem from="1604818621441" duration="12215000" />
-      <workItem from="1604835466280" duration="14889000" />
+      <workItem from="1604835466280" duration="20104000" />
     </task>
     <task id="LOCAL-00001" summary="v3">
       <created>1604496301790</created>
@@ -212,30 +224,30 @@
     </state>
     <state x="2341" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604566341166" />
     <state x="505" y="193" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604754479702" />
-    <state width="1493" height="347" key="GridCell.Tab.0.bottom" timestamp="1604852626598">
+    <state width="1493" height="347" key="GridCell.Tab.0.bottom" timestamp="1604859241337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604852626598" />
-    <state width="1493" height="347" key="GridCell.Tab.0.center" timestamp="1604852626598">
+    <state width="1493" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604859241337" />
+    <state width="1493" height="347" key="GridCell.Tab.0.center" timestamp="1604859241336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604852626598" />
-    <state width="1493" height="347" key="GridCell.Tab.0.left" timestamp="1604852626598">
+    <state width="1493" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604859241336" />
+    <state width="1493" height="347" key="GridCell.Tab.0.left" timestamp="1604859241336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604852626598" />
-    <state width="1493" height="347" key="GridCell.Tab.0.right" timestamp="1604852626598">
+    <state width="1493" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604859241336" />
+    <state width="1493" height="347" key="GridCell.Tab.0.right" timestamp="1604859241336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1537" height="216" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
     <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604852626598" />
+    <state width="1493" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604859241336" />
     <state width="1493" height="259" key="GridCell.Tab.1.bottom" timestamp="1604830847218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -270,10 +282,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496463356" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1604839327509">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604857210873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604839327509" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604857210873" />
     <state x="431" y="145" width="807" height="679" key="search.everywhere.popup" timestamp="1604849416665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

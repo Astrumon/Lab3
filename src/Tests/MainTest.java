@@ -5,8 +5,6 @@ import com.ua.seawar.Player;
 import com.ua.seawar.SaveFile;
 import com.ua.seawar.count_decks.*;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
@@ -43,18 +41,22 @@ public class MainTest {
 
         // Field field = new Field();
         // field.hideBattleField();
+        boolean flag;
         do {
             if (battle.getScorePlayerOne() == 20 || battle.getScorePlayerTwo() == 20) {
                 break;
             }
-            System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
-            // field.showField();
-            battle.shootPlayerOne(random.nextInt(10), getLetter(random.nextInt(10)));
-            System.out.println("score1 = " + battle.getScorePlayerOne());
-            System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
-            // field.showField();
-            battle.shootPlayerTwo(random.nextInt(10), getLetter(random.nextInt(10)));
-            System.out.println("score2 = " + battle.getScorePlayerTwo());
+            do {
+                System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
+                flag = battle.shootPlayerOne(random.nextInt(10), getLetter(random.nextInt(10)));
+                System.out.println("score1 = " + battle.getScorePlayerOne());
+            } while (flag);
+
+            do {
+                System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
+                flag = battle.shootPlayerTwo(random.nextInt(10), getLetter(random.nextInt(10)));
+                System.out.println("score2 = " + battle.getScorePlayerTwo());
+            } while (flag);
         } while ((battle.getScorePlayerOne() != 20) || (battle.getScorePlayerTwo() != 20));
 
 
@@ -238,5 +240,10 @@ public class MainTest {
     }
 
 }
+
+
+
+
+
 
 

@@ -12,6 +12,7 @@ public class Battle implements ConfigFrame{
     private final String HIT_VALUE = "*";
     private ScorePlayerOne scorePlayerOne;
     private ScorePlayerTwo scorePlayerTwo;
+    private boolean flag =false;
 
 
     public Battle(Player player1, Player player2) {
@@ -28,37 +29,45 @@ public class Battle implements ConfigFrame{
         arrayField2 = field2.getArrayField();
     }
 
-    public void shootPlayerOne(int number, char letter) {
+    public boolean shootPlayerOne(int number, char letter) {
         int iLetter = getI(letter);
         if (isBorder(number, iLetter)) {
             arrayField2[number][iLetter] = shipChecker(arrayField2[number][iLetter], scorePlayerOne);
+            return flag;
         } else {
             System.out.println(Player.OUT_OF_FRAME);
         }
+        return false;
     }
 
-    public void shootPlayerTwo(int number, char letter) {
+    public boolean shootPlayerTwo(int number, char letter) {
         int iLetter = getI(letter);
 
         if (isBorder(number, iLetter)) {
             arrayField1[number][iLetter] = shipChecker(arrayField1[number][iLetter], scorePlayerTwo);
+            return flag;
         } else {
             System.out.println(Player.OUT_OF_FRAME);
         }
+        return false;
     }
 
     public String shipChecker(String cordShip, Score score) {
 
         if (cordShip.equals(Field.VALUE_DEFAULT)) {
             cordShip = MISS_VALUE;
+            flag = false;
         } else if (cordShip.equals(HIT_VALUE) ) {
             cordShip = HIT_VALUE;
+            flag = false;
         } else if (cordShip.equals(MISS_VALUE)) {
             cordShip = MISS_VALUE;
+            flag = false;
         }
         else if (cordShip.equals("s") || cordShip.equals("d") || cordShip.equals("t") || cordShip.equals("f")){
             cordShip = HIT_VALUE;
            score.addPoint();
+           flag = true;
         }
         return cordShip;
     }

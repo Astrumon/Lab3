@@ -12,7 +12,7 @@ public class TestApp {
 
     public static void main(String[] args) {
         Scanner keyInput = new Scanner(System.in);
-
+        boolean flag;
         Player player1 = new Player();
         Player player2 = new Player();
 
@@ -80,19 +80,34 @@ public class TestApp {
         System.out.println("------------------------------------");
         System.out.println("Поле второго игрока");
         battle.getField2().showField();
+
         do {
             if (battle.getScorePlayerOne() == 20 || battle.getScorePlayerTwo() == 20) {
                 break;
             }
-             num = random.nextInt(11);
-             sym = getLetter(random.nextInt(11));
-            System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
-            battle.shootPlayerOne(num, sym);
-            System.out.println("number: " + num + "letter " + sym);
-            System.out.println("score1 = " + battle.getScorePlayerOne());
-            System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
-            battle.shootPlayerTwo(num, sym);
-            System.out.println("score2 = " + battle.getScorePlayerTwo());
+           /* boolean flag = true;
+            do {
+                if (flag = false) break;
+                num = key.nextInt();
+                let = key.next().charAt(0);
+                flag = battle.shootPlayerOne(num, let);
+            } while (flag); */
+
+            do {
+                System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
+                num = random.nextInt(10);
+                sym = getLetter(random.nextInt(10));
+                flag = battle.shootPlayerOne(num, sym);
+                System.out.println(flag);
+                System.out.println("number: " + num + "letter " + sym);
+                System.out.println("score1 = " + battle.getScorePlayerOne());
+            } while (flag);
+            //flag = false;
+            do {
+                System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
+                flag = battle.shootPlayerTwo(num, sym);
+                System.out.println("score2 = " + battle.getScorePlayerTwo());
+            } while (flag);
 
         } while ((battle.getScorePlayerOne() != 20) || (battle.getScorePlayerTwo() != 20));
 

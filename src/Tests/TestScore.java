@@ -15,11 +15,10 @@ public class TestScore {
         player1.setFourDeck(3,'D', 'v');
         player2.setFourDeck(3,'D', 'h');
 
-        while (battle.getScorePlayerTwo() != 4) {
-            int nm = new Random().nextInt(10);
-            battle.shootPlayerTwo(nm, 'D');
-            System.out.println("num = " + nm + " D");
-        }
+        do {
+
+        } while (  battle.shootPlayerOne(1 ,'D'));
+
 
       // battle.shootPlayerOne(5, 'D');
 

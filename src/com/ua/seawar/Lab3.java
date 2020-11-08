@@ -40,17 +40,22 @@ public class Lab3 {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         reset();
         setShipPlayerTwo();
-
+        boolean flag;
         do {
             if (battle.getScorePlayerOne() == 20 || battle.getScorePlayerTwo() == 20) {
                 break;
             }
-            System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
-            battle.shootPlayerOne(keyInput.nextInt(), keyInput.next().charAt(0));
-            System.out.println("score1 = " + battle.getScorePlayerOne());
-            System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
-            battle.shootPlayerTwo(keyInput.nextInt(), keyInput.next().charAt(0));
-            System.out.println("score2 = " + battle.getScorePlayerTwo());
+            do {
+                System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
+                flag = battle.shootPlayerOne(keyInput.nextInt(), keyInput.next().charAt(0));
+                System.out.println("score1 = " + battle.getScorePlayerOne());
+            } while (flag);
+
+            do {
+                System.out.println("Второй игрок введите координаты для выстрела - число, символ: ");
+                flag = battle.shootPlayerTwo(keyInput.nextInt(), keyInput.next().charAt(0));
+                System.out.println("score2 = " + battle.getScorePlayerTwo());
+            } while (flag);
         } while ((battle.getScorePlayerOne() != 20) || (battle.getScorePlayerTwo() != 20));
 
 
