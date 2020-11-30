@@ -4,8 +4,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import static com.ua.seawar.Lab3.battle;
-
 public class SaveFile {
     private String pathname;
     private String[][] array1, array2;

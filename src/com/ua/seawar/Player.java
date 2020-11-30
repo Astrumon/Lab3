@@ -104,6 +104,7 @@ public class Player implements ConfigFrame {
         } else {
             System.out.println(OUT_OF_FRAME);
         }
+
         return false;
     }
 
@@ -150,19 +151,11 @@ public class Player implements ConfigFrame {
     }
 
     private int getVOrientation(char orientation) {
-        int or = 0;
-        if (orientation == ORIENTATION_VERTICAL) {
-            or = 1;
-        }
-        return or;
+        return  (orientation == ORIENTATION_VERTICAL) ? 1 : 0;
     }
 
     private int getGOrientation(char orientation) {
-        int or = 0;
-        if (orientation == ORIENTATION_HORIZONTAL) {
-            or = 1;
-        }
-        return or;
+        return (orientation == ORIENTATION_HORIZONTAL) ? 1 : 0;
     }
 
     private boolean locationShip(List<Ship> ships, Counter countNDeck, int number) {

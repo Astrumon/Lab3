@@ -95,8 +95,8 @@ public class TestApp {
 
             do {
                 System.out.println("Первый игрок введите координаты для выстрела - число, символ: ");
-                num = random.nextInt(10);
-                sym = getLetter(random.nextInt(10));
+                num = random.nextInt(11);
+                sym = getLetter(random.nextInt(11));
                 flag = battle.shootPlayerOne(num, sym);
                 System.out.println(flag);
                 System.out.println("number: " + num + "letter " + sym);

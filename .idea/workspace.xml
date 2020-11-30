@@ -3,14 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="6760f544-41a1-4a92-bc6d-8bdb8cf9bdeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibgit" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/after/file.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/before/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/before/file.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/driver/diff.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/expected/nodriver/diff.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" beforeDir="false" afterPath="$PROJECT_DIR$/mylibgit/tests/resources/userdiff/files/file.javascript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libgit2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylibgit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/Tests/TestApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/Tests/TestApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Battle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Battle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/ConfigFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/ConfigFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Lab3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Lab3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab3/com/ua/seawar/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/ConfigFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/ConfigFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Lab3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Lab3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ua/seawar/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +47,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Лабораторная работа №1. Биднык Данил ПГ-п81/Lab1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QuickAccess\Study\KPI\TechnologyOfSP\Lab3\src\Tests" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Tests" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\QuickAccess\Study\KPI\TechnologyOfSP\Lab3\src\Tests" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MainTest">
-    <configuration name="Lab3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ua.seawar.Lab3" />
+  <component name="RunManager" selected="Application.test">
+    <configuration name="ScannerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests.ScannerTest" />
+      <module name="Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeaBattleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ua.seawar.SeaBattleMain" />
       <module name="Lab3" />
       <extension name="coverage">
         <pattern>
@@ -63,15 +87,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.MainTest" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,39 +107,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.TestScore" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestShoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.TestShoot" />
-      <module name="Lab3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.Lab3" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.TestApp" />
-        <item itemvalue="Application.TestShoot" />
-        <item itemvalue="Application.TestScore" />
+        <item itemvalue="Application.SeaBattleMain" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ScannerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +157,20 @@
       <workItem from="1604749534255" duration="7306000" />
       <workItem from="1604763586115" duration="5142000" />
       <workItem from="1604818621441" duration="12215000" />
-      <workItem from="1604835466280" duration="21308000" />
+      <workItem from="1604835466280" duration="22987000" />
+      <workItem from="1604862616184" duration="43000" />
+      <workItem from="1604947194288" duration="102000" />
+      <workItem from="1604947734927" duration="1168000" />
+      <workItem from="1605080556289" duration="80000" />
+      <workItem from="1605090195923" duration="48000" />
+      <workItem from="1605450083210" duration="5220000" />
+      <workItem from="1605714491591" duration="1153000" />
+      <workItem from="1606132689219" duration="1593000" />
+      <workItem from="1606297679968" duration="76000" />
+      <workItem from="1606380238454" duration="7073000" />
+      <workItem from="1606578421322" duration="626000" />
+      <workItem from="1606679142482" duration="1403000" />
+      <workItem from="1606685682166" duration="574000" />
     </task>
     <task id="LOCAL-00001" summary="v3">
       <created>1604496301790</created>
@@ -209,35 +221,44 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496535825" />
-    <state x="505" y="193" key="FileChooserDialogImpl" timestamp="1604754479702">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2362" y="221" key="FileChooserDialogImpl" timestamp="1606297750650">
+      <screen x="1920" y="34" width="1344" height="800" />
     </state>
-    <state x="2341" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604566341166" />
+    <state x="2341" y="240" key="FileChooserDialogImpl/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1605090226531" />
+    <state x="2362" y="221" key="FileChooserDialogImpl/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606297750650" />
     <state x="505" y="193" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604754479702" />
-    <state width="1493" height="666" key="GridCell.Tab.0.bottom" timestamp="1604860355307">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1606680546995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
-    <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604860355307" />
-    <state width="1493" height="666" key="GridCell.Tab.0.center" timestamp="1604860355307">
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604947295617" />
+    <state width="1237" height="758" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604948903616" />
+    <state width="1493" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.34.1344.800@0.0.1536.824" timestamp="1606135795620" />
+    <state width="1301" height="142" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606389009613" />
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606680546995" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1606680546995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="216" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
-    <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604860355307" />
-    <state width="1493" height="666" key="GridCell.Tab.0.left" timestamp="1604860355306">
+    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604947295617" />
+    <state width="1237" height="758" key="GridCell.Tab.0.center/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604948903615" />
+    <state width="1493" height="158" key="GridCell.Tab.0.center/0.0.1536.824/1920.34.1344.800@0.0.1536.824" timestamp="1606135795620" />
+    <state width="1301" height="142" key="GridCell.Tab.0.center/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606389009613" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606680546995" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1606680546995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="216" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
-    <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604860355306" />
-    <state width="1493" height="666" key="GridCell.Tab.0.right" timestamp="1604860355307">
+    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604947295617" />
+    <state width="1237" height="758" key="GridCell.Tab.0.left/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604948903615" />
+    <state width="1493" height="158" key="GridCell.Tab.0.left/0.0.1536.824/1920.34.1344.800@0.0.1536.824" timestamp="1606135795620" />
+    <state width="1301" height="142" key="GridCell.Tab.0.left/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606389009613" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606680546995" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1606680546995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="216" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604398077458" />
-    <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604581668245" />
-    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604860355307" />
+    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604947295617" />
+    <state width="1237" height="758" key="GridCell.Tab.0.right/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604948903616" />
+    <state width="1493" height="158" key="GridCell.Tab.0.right/0.0.1536.824/1920.34.1344.800@0.0.1536.824" timestamp="1606135795620" />
+    <state width="1301" height="142" key="GridCell.Tab.0.right/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606389009613" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606680546995" />
     <state width="1493" height="259" key="GridCell.Tab.1.bottom" timestamp="1604830847218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -262,16 +283,23 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1604695497210" />
-    <state x="466" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1604835465700">
+    <state x="466" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1606755172402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604495915203" />
-    <state x="2308" y="288" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1604564902559" />
-    <state x="466" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604835465700" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604947734401" />
+    <state x="2308" y="288" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1605090200625" />
+    <state x="466" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.34.1344.800@0.0.1536.824" timestamp="1606755172402" />
+    <state x="2328" y="263" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606578420353" />
+    <state x="466" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606685688930" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604496463356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.25.1280.920@0.0.1536.824" timestamp="1604496463356" />
+    <state x="2005" y="75" key="new project wizard" timestamp="1606297753016">
+      <screen x="1920" y="34" width="1344" height="800" />
+    </state>
+    <state x="2001" y="105" key="new project wizard/0.0.1536.824/1920.25.1280.920@1920.25.1280.920" timestamp="1605090239301" />
+    <state x="2005" y="75" key="new project wizard/0.0.1536.824/1920.34.1344.800@1920.34.1344.800" timestamp="1606297753016" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1604857210873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

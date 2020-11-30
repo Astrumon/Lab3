@@ -37,6 +37,7 @@ public class Battle implements ConfigFrame{
         } else {
             System.out.println(Player.OUT_OF_FRAME);
         }
+
         return false;
     }
 
